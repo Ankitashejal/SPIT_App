@@ -12,6 +12,7 @@ import { UserData } from '../../providers/user-data';
   styleUrls: ['./schedule.scss'],
 })
 export class SchedulePage implements OnInit {
+  showContent = false;
   // Gets a reference to the list element
   @ViewChild('scheduleList', { static: true }) scheduleList: IonList;
 

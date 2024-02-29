@@ -28,28 +28,25 @@
     </p>
 
     <h3 class="ion-padding-top ion-padding-start">Details</h3>
+    <ion-accordion-group style="margin-top: 20px;">
+      <ion-accordion value="first" style="border-radius: 20px;border-color: #03D3C0;">
+        <ion-item slot="header" color="light">
+          <ion-label style="font-size: 20px;">Mission</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-img src="https://mca.spit.ac.in/wp-content/uploads/2022/12/Mission_panel_whitebg-1024x517.png"></ion-img>
+        </div>
+      </ion-accordion><br>
 
-    <ion-list lines="none">
-      <ion-item>
-        <ion-select label="Location" [(ngModel)]="location" [interfaceOptions]="selectOptions">
-          <ion-select-option value="madison">Andheri,Mumbai</ion-select-option>
-          <!-- <ion-select-option value="austin">Austin, TX</ion-select-option>
-          <ion-select-option value="chicago">Chicago, IL</ion-select-option>
-          <ion-select-option value="seattle">Seattle, WA</ion-select-option> -->
-        </ion-select>
-      </ion-item>
-      <ion-item button="true" id="open-date-input">
-        <ion-label>
-          Date
-        </ion-label>
-        <ion-text slot="end">{{ conferenceDate | date: 'mediumDate' }}</ion-text>
-        <ion-popover id="date-input-popover" trigger="open-date-input" [showBackdrop]="false" side="top" alignment="end">
-          <ng-template>
-            <ion-datetime max="2056" [(ngModel)]="conferenceDate" presentation="date"></ion-datetime>
-          </ng-template>
-        </ion-popover>
-      </ion-item>
-    </ion-list>
+      <ion-accordion value="first" style="border-radius: 20px;border-color: #03D3C0;">
+        <ion-item slot="header" color="light">
+          <ion-label style="font-size: 20px;">Vision</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-img src="https://mca.spit.ac.in/wp-content/uploads/2022/12/Vision_whitebg-1024x576.png"></ion-img>
+        </div>
+      </ion-accordion><br>
+    </ion-accordion-group>
 <!-- 
     <h3 class="ion-padding-top ion-padding-start">Internet</h3> -->
 

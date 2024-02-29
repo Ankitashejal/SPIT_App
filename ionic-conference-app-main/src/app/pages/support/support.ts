@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { AlertController, ToastController } from '@ionic/angular';
+import { AlertController, NavController, ToastController } from '@ionic/angular';
 
 
 @Component({
@@ -15,16 +15,20 @@ export class SupportPage {
 
   constructor(
     public alertCtrl: AlertController,
-    public toastCtrl: ToastController
+    public toastCtrl: ToastController,
+    public navCtrl : NavController
   ) { }
 
-  async ionViewDidEnter() {
-    const toast = await this.toastCtrl.create({
-      message: 'This does not actually send a support request.',
-      duration: 3000
-    });
-    await toast.present();
+  goBack(){
+    this.navCtrl.back();
   }
+  // async ionViewDidEnter() {
+  //   const toast = await this.toastCtrl.create({
+  //     message: 'This does not actually send a support request.',
+  //     duration: 3000
+  //   });
+  //   await toast.present();
+  // }
 
   async submit(form: NgForm) {
     this.submitted = true;

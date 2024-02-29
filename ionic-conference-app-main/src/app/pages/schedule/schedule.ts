@@ -6,6 +6,7 @@ import { ScheduleFilterPage } from '../schedule-filter/schedule-filter';
 import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
 
+
 @Component({
   selector: 'page-schedule',
   templateUrl: 'schedule.html',
@@ -37,6 +38,12 @@ export class SchedulePage implements OnInit {
     public user: UserData,
     public config: Config
   ) { }
+
+ 
+
+  changepage(){
+    this.router.navigate(['/support']);
+  }
 
   ngOnInit() {
     this.updateSchedule();

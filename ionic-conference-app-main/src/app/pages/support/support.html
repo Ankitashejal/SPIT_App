@@ -1,35 +1,16 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Support</ion-title>
-  </ion-toolbar>
 
-</ion-header>
+<ion-icon name="chevron-back-circle-outline" style="font-size: x-large;" (click)="goBack()"></ion-icon>
+<ion-content background="linear-gradient(to bottom right,blue,rgb(111, 211, 231))" style="--background: linear-gradient(to bottom right,blue,rgb(111, 211, 231))">
+<ion-card style="background-color: rgb(255, 254, 254)">
+  <img alt="Silhouette of mountains" src="https://oculus.spit.ac.in/images/about3.jpg" />
 
-<ion-content>
-  <div class="support-logo">
-    <img src="assets/img/appicon.svg" alt="Ionic Logo">
-  </div>
-
-  <div class="support-form">
-    <form #submitForm="ngForm" novalidate (ngSubmit)="submit(submitForm)">
-      <ion-textarea
-        label="Enter your support message below"
-        labelPlacement="stacked"
-        fill="solid"
-        [(ngModel)]="supportMessage"
-        name="supportQuestion"
-        #supportQuestion="ngModel"
-        rows="6"
-        errorText="Support message is required"
-        required>
-      </ion-textarea>
-
-      <div class="ion-padding">
-        <ion-button expand="block" type="submit">Submit</ion-button>
-      </div>
-    </form>
-  </div>
+  <ion-card-header>
+    <ion-card-title>Gallery</ion-card-title>
+   
+  </ion-card-header>
+  <ion-button style="padding-left: 10px;">Register Now</ion-button>
+  <ion-card-content>
+    Following tradition, CSI-SPIT is conducting the annual 24-hour SPIT Hackathon in February 2023. This year, we are going back to organizing the hackathon completely in Offline Mode. With a great team and skilled panel of judges, this hackathon will be an ideal platform to put student's knowledge to use and something
+  </ion-card-content>
+</ion-card>
 </ion-content>

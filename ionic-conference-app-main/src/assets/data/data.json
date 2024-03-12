@@ -99,10 +99,7 @@
       "name": "Food",
       "icon": "restaurant"
     },
-    {
-      "name": "Ionic",
-      "icon": "logo-ionic"
-    },
+  
     {
       "name": "Tooling",
       "icon": "hammer"

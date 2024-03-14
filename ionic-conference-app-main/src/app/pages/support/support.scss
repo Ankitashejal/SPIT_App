@@ -20,6 +20,18 @@
 
 
 
-button {
+
   
-}
+  .image-container {
+    perspective: 1000px; /* Set perspective for 3D effect */
+  }
+  
+  .rotating-image {
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    transition: transform 0.5s ease; /* Smooth transition effect */
+  }
+  
+  .rotating-image:hover {
+    transform: rotateY(360deg); /* Rotate the image on hover */
+  }

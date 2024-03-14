@@ -26,7 +26,7 @@ export class SchedulePage implements OnInit {
   groups: any = [];
   confDate: string;
   showSearchbar: boolean;
-
+  alertButtons:['OK','OKAY']
   constructor(
     public alertCtrl: AlertController,
     public confData: ConferenceData,

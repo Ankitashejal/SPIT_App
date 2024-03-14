@@ -30,6 +30,7 @@ export class SupportPage {
   //   await toast.present();
   // }
 
+  
   async submit(form: NgForm) {
     this.submitted = true;
 

@@ -1,8 +1,19 @@
 
 <ion-icon name="chevron-back-circle-outline" style="font-size: x-large;" (click)="goBack()"></ion-icon>
 <ion-content background="linear-gradient(to bottom right,blue,rgb(111, 211, 231))" style="--background: linear-gradient(to bottom right,blue,rgb(111, 211, 231))">
-<ion-card style="background-color: rgb(255, 254, 254)">
-  <img alt="Silhouette of mountains" src="https://oculus.spit.ac.in/images/about3.jpg" />
+<!-- <ion-card style="background-color: rgb(255, 254, 254)">
+  <img alt="Silhouette of mountains" src="..\assets\img\Screenshot 2024-03-14 105257.png"  style="transform: rotateY(360deg);"/> -->
+  <ion-content>
+    <div class="image-container">
+      <img src="..\assets\img\Screenshot 2024-03-14 105257.png" alt="360 Image" class="rotating-image">
+      <ion-button style="color: rgb(14, 10, 91);" id="thisAlert">Register now</ion-button>
+      <ion-alert trigger="thisAlert" header="this is alert" message="Registered succesfully" ></ion-alert>
+      <ion-card-content>
+        It is an electrifying dance event where dance professionals compete with each other gathering attention from all over Mumbai. If you're someone who loves dancing your heart out (solo/group) , its your chance Participate now ! One stage.One competition. One Motive- to win big! Its time for AELAAN-e-JUNG .The winners await exciting prizes
+      </ion-card-content>
+      
+    </div>
+  </ion-content>
 
   <ion-card-header>
     <ion-card-title>Gallery</ion-card-title>
@@ -12,5 +23,5 @@
   <ion-card-content>
     Following tradition, CSI-SPIT is conducting the annual 24-hour SPIT Hackathon in February 2023. This year, we are going back to organizing the hackathon completely in Offline Mode. With a great team and skilled panel of judges, this hackathon will be an ideal platform to put student's knowledge to use and something
   </ion-card-content>
-</ion-card>
+<!-- </ion-card> -->
 </ion-content>
